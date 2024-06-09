@@ -7,6 +7,7 @@ import Pricing from './section/Pricing'
 import Services from './section/Services'
 import Testimonial from './section/Testimonial'
 import Whychoose from './section/Whychoose'
+import Footer from './components/Footer'
 
 
 
@@ -22,6 +23,7 @@ const App = () => {
       <Services />
       <Testimonial />
       <Whychoose />
+      <Footer />
 
 
     </div>
