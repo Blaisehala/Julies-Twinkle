@@ -81,3 +81,20 @@ const slideImg = () => {
     // }
 // }, 2000);
 
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    const text = "Welcome to my website!";
+    const typewriterElement = document.getElementById("typewriter");
+    let index = 0;
+
+    function type() {
+        if (index < text.length) {
+            typewriterElement.textContent += text.charAt(index);
+            index++;
+            setTimeout(type, 100);
+        }
+    }
+
+    type();
+});
