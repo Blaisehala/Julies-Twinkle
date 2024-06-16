@@ -442,7 +442,33 @@ header ul li #NavNum:hover {
     padding: 3rem 1rem 1rem;
     box-shadow: 0 0 8px 3px #eeeeee;
     background-color: #fff;
-    border-radius: 7px;
+    border-radius: px;
+    background-image: url('/img/backgroundimg.jpg');
+    background-size: cover; /* Cover the entire div */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    width: 100%;
+    height: 350px; /* Adjust the height as needed */
+
+}
+
+
+
+
+
+
+.sectionThree .servicesBox .box2 {
+    padding: 3rem 1rem 1rem;
+    box-shadow: 0 0 8px 3px #eeeeee;
+    background-color: #fff;
+    border-radius: px;
+    background-image: url('/img/backgroundimg.jpg');
+    background-size: cover; /* Cover the entire div */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    width: 100%;
+    height: 350px; /* Adjust the height as needed */
+
 }
 
 .sectionThree .servicesBox .box h2 {
@@ -824,4 +850,15 @@ footer {
     white-space: nowrap;
     overflow: hidden;
     font-size: 2em;
+}
+
+
+.boxx1{
+    /* width: 100%; */
+    /* height: 500px; Adjust the height as needed */
+    /* background-image: url('/img/backgroundimg.jpg'); Path to your image */
+    /* background-size: cover; Cover the entire div */
+    /* background-position: center; Center the image */
+    /* background-repeat: no-repeat; Do not repeat the image */
+
 }
