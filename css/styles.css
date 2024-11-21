@@ -263,8 +263,8 @@ header ul li #NavNum:hover {
 
 .sectionFirst .frontPage .address {
     color: var(--global-color-0);
-    font-size: 25px;
-    line-height: 1.2em;
+    font-size:30px;
+    /* line-height: 1.2em; */
     font-family: var(--font-02);
 }
 
@@ -273,6 +273,8 @@ header ul li #NavNum:hover {
     font-weight: 400;
     font-family: var(--font-02);
 }
+
+
 
 /* .sectionFirst .frontPage .para {} */
 
@@ -343,25 +345,25 @@ header ul li #NavNum:hover {
     align-items: center;
 }
 
-.sectionSecond .fourIMG {
+/* .sectionSecond .fourIMG {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     width: 100%;
     height: 100%;
     gap: 1rem;
     padding: 4rem 1rem 12rem;
-}
+} */
 
 .sectionSecond .fourIMG img {
-    width: 100%;
-    height: 100%;
-    border-radius: 10px;
+    /* width: 100%; */
+    /* height: 100%; */
+    /* border-radius: 10px; */
     transition: all .4s ease;
 }
 
-.sectionSecond .fourIMG img:hover {
+/* .sectionSecond .fourIMG img:hover {
     transform: scale(1.1);
-}
+} */
 
 .sectionSecond .fourIMG img:nth-child(2n+1) {
     margin-top: 4rem;
