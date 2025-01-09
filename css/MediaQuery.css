@@ -28,14 +28,14 @@
     }
 
     /* section second  */
-    .sectionSecond .fourIMG {
+    sectionSecond .fourIMG {
         grid-template-columns: repeat(2, 1fr);
         height: 80%;
         padding: 0;
         padding-bottom: 4rem;
     }
 
-    .sectionSecond .fourIMG img {
+    sectionSecond .fourIMG img {
         height: 100%;
     }
 
@@ -43,6 +43,10 @@
     .sectionFive {
         grid-template-columns: repeat(2, 1fr);
     }
+
+
+
+
 
     /* ----------.AboutMeInDetail--------- */
     .AboutMeInDetail {
@@ -90,39 +94,120 @@
 }
 
 @media (max-width:786px) {
+    @media (max-width: 786px) {
+        .sectionFirst {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          text-align: center; /* Center-align text */
+          padding: 20px; /* Add even spacing around the section */
+          position: relative; /* Needed for child elements to position relative to this container */
+        }
+      
+        .content h2 {
+          font-size: 2rem; /* Reduce heading size */
+          line-height: 1.4; /* Adjust line height for better readability */
+          margin-bottom: 50px;
+        }
+      
+        .content p {
+          font-size: 0.95rem; /* Slightly smaller text for the description */
+          line-height: 1.6;
+          margin-bottom: 20px; /* Add spacing between paragraph and button */
+        }
+      
+        .appointment-btn-mobile {
+          display: inline-block;
+          padding: 12px 20px;
+          font-size: 1rem;
+          font-weight: bold;
+          border-radius: 5px;
+          background-color: #ffe600;
+          color: #333;
+          text-decoration: none;
+          transition: all 0.3s ease;
+          margin: 10px auto; /* Center the button */
+          /* position: absolute; Position it relative to the container */
+          /* bottom: 25%; Adjust this value to ensure the lips are visible */
+          /* right:45% */
+        }
+      }
+      
+      .appointment-btn{
+        display: none; /* Hide the button on small screens */
+      }
+      
+}
 
-    .sectionFirst .frontPage .btn {
-        display: flex;
-        flex-direction: column;
-    }
+    
 
-    .transform-img {
-        width: 200%;
-        transform: translateX(-180px);
-    }
+      @media (max-width:360px){
+        .appointment-btn-mobile{
+            padding: 10px 20px;
+            background-color: #ffe600;
+            color: #333;
+            text-decoration: none;
+            font-size: 0.9rem; /* Slightly smaller font for very small screens */
+            font-weight: bold;
+            border-radius: 5px;
+            position: relative;
+            left: 0; /* Align completely to the left */
+            margin: 0; /* Ensure no auto-centering */
+
+        }
+      
+
+
+
+
+   
 
     /* second section  */
-    .sectionSecond {
+    sectionSecond {
         grid-template-columns: repeat(1, 1fr);
         gap: 0;
         margin-bottom: 4rem;
     }
 
-    .sectionSecond .fourIMG {
-        grid-template-columns: repeat(2, minmax(100px, 200px));
-        justify-content: center;
+    .fourIMG{
+        display: none;
     }
 
+    /* .sectionSecond .fourIMG {
+        grid-template-columns: repeat(2, minmax(100px, 200px));
+        justify-content: center;
+    } */
 
-    .sectionSecond .textInfo {
+
+    sectionSecond .textInfo {
         padding: 0 8%;
         text-align: center;
     }
 
-    .sectionSecond .textInfo .btn {
+    sectionSecond .textInfo .btn {
         margin: auto;
     }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
     /* section three  */
 
     .sectionThree .servicesBox {
@@ -227,12 +312,12 @@
 
 
     /* section second  */
-    .sectionSecond {
+    sectionSecond {
         gap: 2rem;
         /* margin: 4rem 0; */
     }
 
-    .sectionSecond .fourIMG {
+    sectionSecond .fourIMG {
         grid-template-columns: repeat(1, minmax(100px, 200px));
         justify-content: center;
         padding: 0;
@@ -240,7 +325,7 @@
         padding-top: 4rem;
     }
 
-    .sectionSecond .fourIMG img:nth-child(2n+1) {
+    sectionSecond .fourIMG img:nth-child(2n+1) {
         display: none;
     }
 
@@ -266,3 +351,7 @@
 
     .imgslidertext .imgslider .slide {}
 }
+
+
+ 
+    
